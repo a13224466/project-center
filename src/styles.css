@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'http://at.alicdn.com/t/font_47pt1zi9tore8kt9.css';
+
+/*header,
+footer,
+.main {
+    display: block;
+}*/
+
+header {
+    position: fixed;
+    height: 0.65rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+footer {
+    position: fixed;
+    height: 0.8rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.main .row {
+    /*position: absolute;
+    overflow-y: scroll;*/
+    /*margin-top: 0.8rem;*/
+    margin-bottom: 0.65rem;
+    /*-webkit-overflow-scrolling: touch;*/
+}
+
+.alert-success {
+    text-align: center;
+}

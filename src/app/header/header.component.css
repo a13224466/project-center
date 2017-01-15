@@ -1,0 +1,21 @@
+.header {
+    background: -webkit-linear-gradient(#ccc, #eee);
+    background: -o-linear-gradient(#ccc, #eee);
+    background: -moz-linear-gradient(#ccc, #eee);
+    background: linear-gradient(#ccc, #eee);
+    height: 0.65rem;
+}
+
+.header .row {
+    text-align: center;
+}
+
+.row div {
+    padding-top: 0.1rem;
+    display: block;
+}
+
+.go-back {
+    position: absolute;
+    left: 0.2rem;
+}

@@ -1,0 +1,31 @@
+.footer {
+    background: -webkit-linear-gradient(#ccc, #eee);
+    background: -o-linear-gradient(#ccc, #eee);
+    background: -moz-linear-gradient(#ccc, #eee);
+    background: linear-gradient(#ccc, #eee);
+    height: 0.8rem;
+}
+
+.footer .bar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.footer .bar li {
+    width: 25%;
+    height: 4.0rem;
+    line-height: 0.8rem;
+    text-align: center;
+}
+
+.bar .bar-1 .home {
+    position: absolute;
+    top: -1.6rem;
+    width: 25%;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 0.1rem;
+}

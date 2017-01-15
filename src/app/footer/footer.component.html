@@ -1,0 +1,16 @@
+<div class="container footer">
+    <ul class="bar">
+        <li class="bar-1" (click)="show(mainData.isShow)">
+            <div>
+                中心
+            </div>
+            <div class="home" [hidden]="!mainData.isShow">
+                <div class="item" routerLink="/robot" (click)="goto(1)">聊天机器人</div>
+                <div class="item" routerLink="/joke" (click)="goto(2)">笑话</div>
+            </div>
+        </li>
+        <li class="bar-2">暂在建设中</li>
+        <li class="bar-3">暂在建设中</li>
+        <li class="bar-4">暂在建设中</li>
+    </ul>
+</div>

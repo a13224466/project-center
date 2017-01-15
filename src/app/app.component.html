@@ -1,6 +1,9 @@
-<h1>
-    {{title}}
-</h1>
-<ul>
-    <li *ngFor="let item of items">{{item.content}}</li>
-</ul>
+<header [mainData]="mainData"></header>
+<div class="container main">
+    <div class="row">
+        <!--<p *ngFor="let item of items">{{item.updatetime}}</p>-->
+    </div>
+    <router-outlet></router-outlet>
+</div>
+<footer [mainData]="mainData" (outData)="outData($event)">
+</footer>

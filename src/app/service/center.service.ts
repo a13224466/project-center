@@ -6,16 +6,13 @@ import '../rxjs-extensions';
 @Injectable()
 export class CenterService {
 
-    constructor(private http:Http,private jsonp:Jsonp) {  }
-    // aaa = new URLSearchParams();
-    // headers: Headers = new Headers({ dataType: 'jsonp', jsonpCallback: 'a' });
-    // options = new RequestOptions({ headers: this.headers });
+    constructor(private http:Http, private jsonp:Jsonp) {  }
 
     heihei(): Observable<any>{
         let url = 'http://192.168.1.111:8080/myResume/joke/methodOne';
         let params = new URLSearchParams();
         params.set('callback', 'JSONP_CALLBACK');
-        let datas = '';
+        // let datas = '';
         return this.jsonp.get(url, { search: params })
             .map(resp => resp.json());
     }
